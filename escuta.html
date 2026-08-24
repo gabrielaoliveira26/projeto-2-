@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal de Escuta | Equilíbrio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            Equilíbrio
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="escuta.html">Portal de Escuta</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- CABEÇALHO -->
+    <section class="page-header">
+
+        <div>
+
+            <span class="tag">
+                PORTAL DE ESCUTA
+            </span>
+
+            <h1>
+                Um espaço para
+                <span>você se expressar.</span>
+            </h1>
+
+            <p>
+                Às vezes, colocar os sentimentos em palavras pode ajudar
+                a organizar os pensamentos.
+            </p>
+
+        </div>
+
+        <i class="fa-solid fa-comments page-icon"></i>
+
+    </section>
+
+
+    <!-- PORTAL -->
+    <section class="listening-section">
+
+        <div class="listening-info">
+
+            <div class="icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h2>
+                Estamos aqui para ouvir.
+            </h2>
+
+            <p>
+                Use este espaço para escrever livremente sobre como
+                você está se sentindo.
+            </p>
+
+            <p>
+                O exercício não substitui uma conversa com um psicólogo,
+                médico ou outro profissional de saúde.
+            </p>
+
+            <div class="support-box">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <p>
+                    Se você estiver enfrentando uma situação de sofrimento
+                    intenso ou pensando em machucar a si mesmo, procure
+                    ajuda profissional ou um serviço de emergência.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="listening-form">
+
+            <form id="listeningForm">
+
+                <label for="name">
+                    Como podemos chamar você?
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Seu nome ou apelido"
+                >
+
+
+                <label for="feeling">
+                    Como você está se sentindo?
+                </label>
+
+                <select id="feeling" required>
+
+                    <option value="">
+                        Selecione uma opção
+                    </option>
+
+                    <option value="tranquilo">
+                        Tranquilo(a)
+                    </option>
+
+                    <option value="feliz">
+                        Feliz
+                    </option>
+
+                    <option value="ansioso">
+                        Ansioso(a)
+                    </option>
+
+                    <option value="triste">
+                        Triste
+                    </option>
+
+                    <option value="cansado">
+                        Cansado(a)
+                    </option>
+
+                    <option value="confuso">
+                        Confuso(a)
+                    </option>
+
+                    <option value="nao-sei">
+                        Não sei explicar
+                    </option>
+
+                </select>
+
+
+                <label for="message">
+                    Escreva o que você gostaria de colocar para fora:
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="8"
+                    placeholder="Escreva aqui..."
+                    required
+                ></textarea>
+
+
+                <button type="submit" class="btn btn-primary">
+
+                    Enviar reflexão
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+                <div id="formMessage"></div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Equilíbrio - Saúde Emocional
+        </p>
+
+        <p>
+            Este espaço é educativo e não substitui atendimento profissional.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

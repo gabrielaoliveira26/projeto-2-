@@ -1,0 +1,255 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz | Equilíbrio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            Equilíbrio
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="escuta.html">Portal de Escuta</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="page-header">
+
+        <div>
+
+            <span class="tag">
+                AUTOREFLEXÃO
+            </span>
+
+            <h1>
+                Como você está
+                <span>se sentindo?</span>
+            </h1>
+
+            <p>
+                Responda às perguntas abaixo e faça uma pequena reflexão
+                sobre seu momento atual.
+            </p>
+
+        </div>
+
+        <i class="fa-solid fa-brain page-icon"></i>
+
+    </section>
+
+
+    <section class="quiz-section">
+
+        <form id="quizForm">
+
+            <div class="question">
+
+                <h3>
+                    1. Como você tem se sentido nos últimos dias?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q1" value="0" required>
+                    Muito bem
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="1">
+                    Bem
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="2">
+                    Mais ou menos
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="3">
+                    Não muito bem
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>
+                    2. Você tem conseguido descansar adequadamente?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q2" value="0" required>
+                    Sim
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="1">
+                    Na maioria das vezes
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="2">
+                    Poucas vezes
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="3">
+                    Não
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>
+                    3. Você tem alguém com quem conversar quando precisa?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q3" value="0" required>
+                    Sim
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="1">
+                    Geralmente
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="2">
+                    Às vezes
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="3">
+                    Não
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>
+                    4. Você tem conseguido fazer coisas que gosta?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q4" value="0" required>
+                    Sim
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="1">
+                    Na maioria das vezes
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="2">
+                    Pouco
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="3">
+                    Quase nunca
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>
+                    5. Você tem percebido muita preocupação ou ansiedade?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q5" value="0" required>
+                    Raramente
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="1">
+                    Às vezes
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="2">
+                    Frequentemente
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="3">
+                    Quase sempre
+                </label>
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">
+                Ver resultado
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </form>
+
+
+        <div id="quizResult" class="quiz-result"></div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Equilíbrio - Saúde Emocional
+        </p>
+
+        <p>
+            Este quiz é apenas para reflexão e não é um diagnóstico.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+ 
